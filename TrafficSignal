@@ -1,0 +1,27 @@
+public class TrafficSignal {
+    public static void main(String[] args)  {
+int signal = 1;
+        while (true) {
+            switch (signal) {
+
+                case 1:
+                    System.out.println("Red");
+                    Thread.sleep(3000);
+                    signal = 2;
+                    break;
+
+                case 2:
+                    System.out.println("Yellow");
+                    Thread.sleep(2000);
+                    signal = 3;
+                    break;
+
+                case 3:
+                    System.out.println("Green");
+                    Thread.sleep(3000);
+                    signal = 1; 
+                    break;
+            }
+        }
+    }
+}
